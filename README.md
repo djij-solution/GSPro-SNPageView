@@ -1,4 +1,41 @@
-# SNPageView
+## 打包流程
+
+### 准备工作
+
+添加 Private pods specs.
+
+```shell
+pod repo add gspro-specs https://github.com/djij-solution/Specs.git
+```
+
+### 更新 podspec
+
+- 本地确保 podspec 文件已经更新. 主要注意版本号.
+
+### 本地测试 podspec
+
+在 Example 项目中 `pod install` 来测试.
+
+### 更新 Repo
+
+- Commit 并提交 PR.
+- 主 Repo merge 了 PR 后, Tag 上对应的版本号
+
+### 发布 podspec
+
+```shell
+pod repo push gspro-specs GSPro-SNPageView.podspec --use-libraries --allow-warnings --sources=https://github.com/djij-solution/Specs.git,https://github.com/CocoaPods/Specs.git
+```
+
+如果提示错误, 可以尝试清理一下 CocoaPods 的 Cache
+
+```shell
+pod cache clean --all
+```
+
+
+
+# SNPageView - Original
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sheodon/SNPageView/LICENSE)
 [![Version](https://img.shields.io/cocoapods/v/SNPageView.svg?style=flat)](http://cocoapods.org/pods/SNPageView)
 [![Platform](https://img.shields.io/cocoapods/p/SNPageView.svg?style=flat)](http://cocoapods.org/pods/SNPageView)
