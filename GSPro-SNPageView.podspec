@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GSPro-SNPageView"
-  s.version      = "2.0.0"
+  s.version      = "2.0.1"
   s.summary      = "GSPro Modification of 分页滚动控件，可实现轮播（support page view and tab page view）"
 
   s.description  = <<-DESC
