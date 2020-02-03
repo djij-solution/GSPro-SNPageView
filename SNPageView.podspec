@@ -8,32 +8,23 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "SNPageView"
-  s.version      = "1.1.0"
-  s.summary      = "分页滚动控件，可实现轮播（support page view and tab page view）"
+  s.name         = "GSPro-SNPageView"
+  s.version      = "2.0.0"
+  s.summary      = "GSPro Modification of 分页滚动控件，可实现轮播（support page view and tab page view）"
 
   s.description  = <<-DESC
-                  分页滚动控件，可实现轮播（support page view and tab page view）by Objective-C
+                  GSPro Modification of 分页滚动控件，可实现轮播（support page view and tab page view）by Objective-C
                   DESC
 
-  s.homepage     = "https://github.com/sheodon/SNPageView"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
+  s.homepage     = "https://github.com/djij-solution/GSPro-SNPageView.git"
   s.license      = "MIT"
-
-  s.author             = { "sheodon" => "sheodon@foxmail.com" }
-  # s.social_media_url   = "http://twitter.com/sheodon"
-
-  s.platform     = :ios, "5.0"
+  s.author             = { "zongyao.qu" => "zongyao.qu@dji.com" }
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
+  s.ios.deployment_target = "9.0"
 
-  s.source       = { :git => "https://github.com/sheodon/SNPageView.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/djij-solution/GSPro-SNPageView.git", :tag => s.version }
   s.source_files  = "SNPageView", "SNPageView/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
   # s.public_header_files = "Classes/**/*.h"
@@ -44,16 +35,8 @@ Pod::Spec.new do |s|
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  # s.framework  = "SomeFramework"
   s.frameworks = "Foundation", "UIKit"
-
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.requires_arc = true
-
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
-
 end
