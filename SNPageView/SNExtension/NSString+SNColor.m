@@ -7,7 +7,7 @@
 //
 
 #import "NSString+SNColor.h"
-#import "UIColor+SNExtension.m"
+#import "UIColor+SNExtension.h"
 
 @implementation NSString(SNColor)
 
