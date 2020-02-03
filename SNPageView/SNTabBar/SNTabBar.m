@@ -357,7 +357,7 @@ static NSString * SNTabBarBgClr = @"ffffff";
     }
     if (animated) {
         [UIView animateWithDuration:0.3f animations:^{
-            _itemLineView.frame = toFrame;
+            self.itemLineView.frame = toFrame;
         } completion:completion];
     }
     else{
